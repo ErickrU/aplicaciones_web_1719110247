@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <title>Etiquetas</title>
+      <style type = "text/css">
+        table td{
+          padding: 25px 60px 25px 60px;
+        }
+        table tbody{
+          text-align:left;
+          background:#908989;
+          color:#fff;
+        }
+        table thead{
+          background:#000;
+          color:#fff; 
+        }
+      </style>
+    </head>
+    <body>
+        <table border="1px" style="text-align:center;">
+          <thead>
+            <tr>
+              <td>Etiqueta </td>
+              <td>Descripcion </td>
+              <td>Ejemplo de uso </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&LT;input type="text"></td>
+              <td>define un campo de entrada de texto de una sola línea</td>
+              <td> 
+                <form>
+                  <label for="fname">Nombre:</label><br>
+                  <input type="text" id="fname" name="fname"><br>
+                  <label for="lname">Apellido:</label><br>
+                  <input type="text" id="lname" name="lname">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="password"></td>
+              <td>define un campo de contraseña</td>
+              <td>
+                <form>
+                  <label for="username">Usuario:</label><br>
+                  <input type="text" id="username" name="username"><br>
+                  <label for="pwd">Contraseña:</label><br>
+                  <input type="password" id="pwd" name="pwd">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="submit"></td>
+              <td>define un botón para enviar datos de formulario a un administrador de formulario</td>
+              <td>
+                <form action="/action_page.php">
+                  <label for="fname">Nombre:</label><br>
+                  <input type="text" id="fname" name="fname" ><br>
+                  <label for="lname">Last Apellido:</label><br>
+                  <input type="text" id="lname" name="lname" ><br><br>
+                  <input type="submit" value="Enviar">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="reset"></td>
+              <td>define un botón de reinicio que reiniciará todos los valores del formulario a sus valores predeterminados</td>
+              <td>
+                <form action="/action_page.php">
+                  <label for="fname">Nombre:</label><br>
+                  <input type="text" id="fname" name="fname" ><br>
+                  <label for="lname">Apellido:</label><br>
+                  <input type="text" id="lname" name="lname" ><br><br>
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Vaciar">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="radio"></td>
+              <td>define un botón de radio</td>
+              <td>
+                  <form>
+                    <input type="radio" id="male" name="gender" value="Hombre">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Mujer">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="Otro">
+                    <label for="other">Otro</label>
+                  </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="checkbox"></td>
+              <td>define una casilla de verificación</td>
+              <td>
+                <form>
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> Bicicleta</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> Carro</label><br>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                  <label for="vehicle3"> Bote</label>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="button"></td>
+              <td>define un botón</td>
+              <td>
+                <input type="button" onclick="alert('Somos halcones somos utec')" value="Aceptar">
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="color"></td>
+              <td>se utiliza para campos de entrada que deben contener un color.</td>
+              <td>
+                <form>
+                  <label for="favcolor">Seleciona un color:</label>
+                  <input type="color" id="favcolor" name="favcolor">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="date"></td>
+              <td>se utiliza para campos de entrada que deben contener una fecha</td>
+              <td>
+                <form>
+                  <label for="birthday">Fecha de cumpleaños:</label>
+                  <input type="date" id="birthday" name="birthday">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="datetime-local"></td>
+              <td>especifica un campo de entrada de fecha y hora, sin zona horaria</td>
+              <td>
+                <form>
+                  <label for="birthdaytime">Fecha y hora:</label>
+                  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="email"></td>
+              <td>se utiliza para campos de entrada que deben contener una dirección de correo electrónico</td>
+              <td>
+                <form>
+                  <label for="email">Enter your email:</label>
+                  <input type="email" id="email" name="email">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="file"></td>
+              <td>se utiliza para campos de entrada que deben contener una dirección de correo electrónico</td>
+              <td>
+                <form>
+                  <label for="myfile">Selecciona un archivo:</label>
+                  <input type="file" id="myfile" name="myfile">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="number"></td>
+              <td>define un campo de entrada numérico</td>
+              <td>
+                <form>
+                  <label for="quantity">Escoje un numero del 1 al 100:</label>
+                  <input type="number" id="quantity" name="quantity" min="1" max="100">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="range"></td>
+              <td>define un control para ingresar un número cuyo valor exacto no es importante (como un control deslizante)</td>
+              <td>
+                <form>
+                  <label for="vol">Rango 1 a 100</label>
+                  <input type="range" id="vol" name="vol" min="1" max="100">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="search"></td>
+              <td>se usa para campos de búsqueda (un campo de búsqueda se comporta como un campo de texto normal)</td>
+              <td>
+                <form>
+                  <label for="gsearch">Busca en Google:</label>
+                  <input type="search" id="gsearch" name="gsearch">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="tel"></td>
+              <td>se utiliza para campos de entrada que deben contener un número de teléfono</td>
+              <td>
+                <form>
+                  <label for="phone">Numero telefonico:</label>
+                  <input type="tel" id="phone" name="phone">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;;input type="url"></td>
+              <td>se utiliza para campos de entrada que deben contener una dirección URL</td>
+              <td>
+                <form>
+                  <label for="homepage">URL:</label>
+                  <input type="url" id="homepage" name="homepage">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="time"></td>
+              <td>permite al usuario seleccionar una hora (sin zona horaria)</td>
+              <td>
+                <form>
+                  <label for="appt">Fije una hora:</label>
+                  <input type="time" id="appt" name="appt">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;input type="week"></td>
+              <td>Permite al usuario seleccionar una semana y año.</td>
+              <td>
+                <form>
+                  <label for="Mes">Selecciona una semana:</label>
+                  <input type="week" id="Mes" name="Mes">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;Select></td>
+              <td>representa un control que permite al usuario elegir de entre un número de opciones</td>
+              <td>
+                <form target="_blank">
+                  <p>
+                    Idioma:
+                    <select name="idioma">
+                      <option>Español</option>
+                      <option>English</option>
+                      <option>French</option>
+                      <option>Dutch</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restaurar">
+                  </p>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>&LT;extarea></td>
+              <td>representa un control para la edición mutilínea de texto sin formato</td>
+              <td>
+                <form target="_blank">
+                  <p>Comentario:</p>
+                  <p><textarea name="comentario" cols="40" rows="5"></textarea></p>
+                  <form>
+                  <p><input type="submit" value="Enviar"></p>
+                  </form>
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <br>
+    </body>
+  </html>
