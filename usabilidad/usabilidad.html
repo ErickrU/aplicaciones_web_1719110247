@@ -1,0 +1,235 @@
+<!doctype html public>
+<html lang="es">
+  <head>
+    <STYLE type="text/css">
+        BODY {text-align: center}
+        H1 {text-align: center}
+        p {font: 175% sans-serif;}
+        th {font: 100% sans-serif;}
+        td {font: 100% sans-serif;}
+    </STYLE>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <title>Usabilidad</title>
+
+  </head>
+
+    <body style="background-color:azure;">
+        <br><h1 class="display-2">Encuesta de fiabilidad</h1><br><br>
+        <p>Totalmente en desacuerdo: 1 punto
+        <br>En desacuerdo: 2 puntos
+        <br>Neutral: 3 puntos
+        <br>De acuerdo: 4 puntos
+        <br>Totalmente de acuerdo: 5 puntos
+
+        </p>
+        <br><table class="table table-dark table">
+            <thead>
+              <tr>
+                <th scope="col" class="text-center">
+                    <form>
+                        <label>Url: </label>
+                        <input type="url" placeholder="www.utectulancingo.edu.mx.com"></form> 
+                    </form>
+                </th>
+                <th class="text-center">Puntuacion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Creo que me gustaría utilizar este sistema frecuentemente.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op1" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">El sistema me resultó innecesariamente complejo.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op2" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Creo que el sistema es bastante fácil de utilizar.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op3" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Creo que necesitaría el soporte de un técnico para poder utilizar este sistema.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op4" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Creo que las diferentes funciones del sistema se encuentran muy bien integradas.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op5" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Opino que hubo demasiada inconsistencia en el sistema.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op6" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Imagino que la mayoría de las personas aprendería a utilizar el sistema rápidamente.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op7" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Me sentí algo incómodo al utilizar este sistema.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number" id="op8" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Me sentí muy seguro al utilizar este sistema.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number"id="op9" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>  
+                <th scope="row">Necesito aprender muchas otras cosas antes de poder utilizar correctamente el sistema.</th>
+                <th class="text-center">
+                    <form>
+                        <input type="number"id="op10" value="" min="1" max="5">
+                      </form>
+                </th>
+              </tr>
+              <tr>  
+                <th scope="row" class="text-center">
+                    <input type="button" name='valor1' value="Puntuacion" onclick="SUS();">
+                </th>
+                <script>
+                    function SUS()
+                    {   
+                        var numerospares = [];
+                        var numerosimpares = [];
+                        var number1=parseInt(document.getElementById("op1").value);
+                        if (number1%2==0){
+                            numerospares.push(number1);
+                            }else{
+                            numerosimpares.push(number1);
+                        }
+                        var number2=parseInt(document.getElementById("op2").value);
+                        if (number2%2==0){
+                            numerospares.push(number2);
+                            }else{
+                            numerosimpares.push(number2);
+                        }
+                        var number3=parseInt(document.getElementById("op3").value);
+                        if (number3%2==0){
+                            numerospares.push(number1);
+                            }else{
+                            numerosimpares.push(number3);
+                        }
+                        var number4=parseInt(document.getElementById("op4").value);
+                        if (number4%2==0){
+                            numerospares.push(number4);
+                            }else{
+                            numerosimpares.push(number4);
+                        }
+                        var number5=parseInt(document.getElementById("op5").value);
+                        if (number5%2==0){
+                            numerospares.push(number5);
+                            }else{
+                            numerosimpares.push(number5);
+                            }
+                        var number6=parseInt(document.getElementById("op6").value);
+                        if (number6%2==0){
+                            numerospares.push(number6);
+                            }else{
+                            numerosimpares.push(number6);
+                            }
+                        var number7=parseInt(document.getElementById("op7").value);
+                        if (number7%2==0){
+                            numerospares.push(number7);
+                            }else{
+                            numerosimpares.push(number7);
+                        }
+                        var number8=parseInt(document.getElementById("op8").value);
+                        if (number8%2==0){
+                            numerospares.push(number8);
+                            }else{
+                            numerosimpares.push(number8);
+                            }   
+                        var number9=parseInt(document.getElementById("op9").value);
+                        if (number9%2==0){
+                            numerospares.push(number9);
+                            }else{
+                            numerosimpares.push(number9);
+                            }
+                        var number10=parseInt(document.getElementById("op10").value);
+                        if (number10%2==0){
+                            numerospares.push(number10);
+                            }else{
+                            numerosimpares.push(number10);
+                            }
+                        var par=0;
+                        var impar=0;
+
+                        for(var i = 0 ; i < numerospares.length; i++){
+                            par += numerospares[i];
+                        }
+                        for(var i = 0 ; i < numerosimpares.length; i++){
+                            impar += numerosimpares[i];
+                        }
+                        var vcin=-25
+                        if(impar == 0){
+                            var res1=impar-0
+                        }
+                        else{
+                            var res1=impar-5
+                        }
+
+                        if (par == 0){
+                            var res2=par-0
+                        }else{
+                            var res2=par-25
+                        }
+                        var res3=res1+res2
+                        var res4=res3*2.5
+                        alert(res4)
+
+                    }
+                </script>
+                </th>
+              </tr>
+            </tbody>
+          </table><br>
+
+
+        
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+      </script>
+      <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+      </script>
+    </body>
+</html>
